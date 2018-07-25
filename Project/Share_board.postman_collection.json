@@ -1,0 +1,193 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Share_board",
+		"_postman_id": "093e0b47-954d-615e-8940-46fea54522d8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/users?user_firstname=jhonny&user_lastname=jhonson&user_email=jhonny@jhonson.com&password=jony@12345",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/users?user_firstname=Robin&user_lastname=andersonn&user_email=robin@anderson&password=robin1578&user_id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "user_firstname",
+							"value": "Robin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "user_lastname",
+							"value": "andersonn",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "user_email",
+							"value": "robin@anderson",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "robin1578",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "user_id",
+							"value": "4",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/notes?description=THIS IS MY SECOND NOTE &user_id=2",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/notes?description=THIS IS MY SECOND NOTE AND UPDATING IT&user_id=2&notes_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "THIS IS MY SECOND NOTE AND UPDATING IT",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "notes_id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/notes?description=THIS IS MY SECOND NOTE &user_id=2 copy",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/notes?description=THIS IS MY SECOND NOTE &user_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "THIS IS MY SECOND NOTE ",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "notes_id",
+							"value": "2",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/share/notes?user_id=2&notes_id=1&write_access=true",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/share/notes?user_id=2&notes_id=1&write_access=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"share",
+						"notes"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "notes_id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "write_access",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
