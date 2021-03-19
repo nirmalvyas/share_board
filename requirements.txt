@@ -21,7 +21,7 @@ Django==1.11
 django-redis==4.8.0
 django-redis-cache==1.7.1
 django-redis-sessions==0.6.1
-djangorestframework==3.7.7
+djangorestframework==3.11.2
 enum34==1.1.6
 extras==0.0.3
 fixtures==2.0.0
